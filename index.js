@@ -11,10 +11,8 @@ function theTime(){
 
     if (h>12) {
         h-=12;
-        document.getElementById('horarioActual').innerHTML = 
-            h + ":" + m + ":" + s + " PM";
-    }else document.getElementById('horarioActual').innerHTML = 
-                h + ":" + m + ":" + s + " AM";
+        document.getElementById('horarioActual').innerHTML = h + ":" + m + ":" + s + " PM";
+    }else document.getElementById('horarioActual').innerHTML = h + ":" + m + ":" + s + " AM";
 
     setTimeout(theTime, 1000);
 }
